@@ -15,7 +15,7 @@ RUN	apk update \
 	&& apk upgrade \
 	&& apk add ca-certificates \
 	&& update-ca-certificates \
-	&& apk add --update openjdk8-jre tzdata curl unzip bash \
+	&& apk add --update openjdk8-jre tzdata curl unzip bash fontconfig ttf-dejavu \
 	&& cp /usr/share/zoneinfo/Europe/Rome /etc/localtime \
 	&& echo "Europe/Rome" > /etc/timezone \
 	&& rm -rf /var/cache/apk/* \
