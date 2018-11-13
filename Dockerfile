@@ -35,7 +35,7 @@ RUN	cd ${JMETER_PLUGINS_FOLDER} \
 	&& curl -O --silent --show-error --fail https://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.2/cmdrunner-2.2.jar
 
 # Plug-ins needed for Yona
-ENV LIST_PLUGINS="jpgc-casutg=2.5,jpgc-dummy=0.2,jpgc-cmd=2.2,jpgc-ggl=2.0,jpgc-pde=0.1,jpgc-json=2.7,jpgc-ffw=2.0,jpgc-filterresults=2.2"
+ENV LIST_PLUGINS="jpgc-casutg=2.5,jpgc-dummy=0.2,jpgc-cmd=2.2,jpgc-ggl=2.0,jpgc-pde=0.1,jpgc-json=2.7,jpgc-ffw=2.0,jpgc-filterresults=2.2,jpgc-mergeresults=2.1"
 
 # Run the PluginsManager to download and install files (JARs and scripts files)
 RUN	cd ${JMETER_BIN} \
